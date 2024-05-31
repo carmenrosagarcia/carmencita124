@@ -1,0 +1,112 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff6f00;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ff6f00;
+        }
+
+        .slider {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;  
+        }
+
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 20s infinite;
+            height: 100%;
+            background-position: center;
+
+
+        }
+
+        .slides img {
+            width: 5000%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+          
+        .content {
+            padding: 2em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            flex: 1;
+            margin: 0 10px;
+
+
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        form button {
+            padding: 1em;
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .footer img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        .ads {
+            background-color: #f4f4f4;
+            padding: 1em;
+            text-align: center;
+            margin: 2em 0;
+            border: 1px solid #ddd;
+           
+        }
+
+        
+        
